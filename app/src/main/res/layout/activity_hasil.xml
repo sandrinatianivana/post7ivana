@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hp.post250.HasilActivity">
+    <!--judul-->
+    <TextView
+        android:id="@+id/Judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/Judul"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--nama-->
+    <TextView
+        android:id="@+id/headeroutput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Full Name : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Judul" />
+    <TextView
+        android:id="@+id/hasiloutput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="tampil nama"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headeroutput1" />
+    <!--username-->
+    <TextView
+        android:id="@+id/headeroutput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Username : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasiloutput1" />
+    <TextView
+        android:id="@+id/hasiloutput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="tampil username : "
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headeroutput2" />
+    <!--umur-->
+    <TextView
+        android:id="@+id/headeroutput3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Age : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasiloutput2" />
+    <TextView
+        android:id="@+id/hasiloutput3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="tampil umur : "
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headeroutput3" />
+    <!--    gender-->
+    <TextView
+        android:id="@+id/headeroutput4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Gender : "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hasiloutput3" />
+    <TextView
+        android:id="@+id/hasiloutput4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="tampil Gender : "
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headeroutput4" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

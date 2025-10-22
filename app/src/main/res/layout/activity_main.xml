@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hp.post250.MainActivity">
+    <!--Judul-->
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/Judul"
+        android:textAlignment="center"
+        android:textColor="@color/maroon"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!--ISI NAMA-->
+    <TextView
+        android:id="@+id/headerinput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Full Name : "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+    <EditText
+
+        android:id="@+id/isinama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded_edit_text_style"
+        android:hint="Enter Your Name"
+        android:inputType="text|textMultiLine|textNoSuggestions"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerinput1" />
+
+    <TextView
+        android:id="@+id/headerinput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Username : "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isinama" />
+    <!--username-->
+    <EditText
+
+        android:id="@+id/isiusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded_edit_text_style"
+        android:hint="Enter Your Username"
+        android:inputType="text|textNoSuggestions"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerinput2" />
+    <!--UMUR-->
+    <TextView
+        android:id="@+id/headerinput3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Age : "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiusername" />
+
+    <EditText
+        android:id="@+id/isiumur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded_edit_text_style"
+        android:hint="Enter Your Age"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerinput3" />
+    <!--Kelamin-->
+    <TextView
+        android:id="@+id/headerinput4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Gender : "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiumur" />
+    <!--pilihan radio button-->
+    <RadioGroup
+        android:id="@+id/radiogrup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="45dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerinput4">
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:paddingLeft="5dp"
+            android:paddingRight="20dp"
+            />
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Perempuan"
+            />
+    </RadioGroup>
+    <!--    password-->
+    <TextView
+        android:id="@+id/headerinput5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Password : "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogrup1" />
+
+    <EditText
+        android:id="@+id/isipassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded_edit_text_style"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerinput5" />
+    <TextView
+        android:id="@+id/headerinput6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="45dp"
+        android:paddingLeft="5dp"
+        android:text="Confirm Password : "
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isipassword" />
+
+    <EditText
+        android:id="@+id/isiconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/rounded_edit_text_style"
+        android:hint="Re-Enter Your Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerinput6" />
+    <Button
+        android:id="@+id/tombolsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/tombol"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isiconfirm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

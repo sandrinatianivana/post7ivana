@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FormPendaftaran</string>
+    <string name="judul">Judul Aplikasi</string>
+    <string name="tombol">Submit</string>
+    <string name="Judul">Hasil Data</string>
+</resources>
